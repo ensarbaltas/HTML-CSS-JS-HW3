@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+/* Declare a function factorialize(n) that takes an integer n as input and returns the factorial of the provided integer.
+
+If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
+
+Factorials are often represented with the shorthand notation n!
+
+For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
+
+Example Outputs:
+factorialize(0) should return 1.
+factorialize(10) should return 3628800.
+factorialize(20) should return 2432902008176640000.
+*/    
+
+<script>
+function factorial1(n){
+    var a=1;
+    for(i=1; i<=n; i=i+1){
+        var a = a*i ;
+    }
+    return a;
+}
+    console.log(factorial1(5))
+
+
+/*
+let fibonacci = []
+fibonacci[0] = 0
+fibonacci[1] = 1
+for(let i = 2; i<= 10; i++) {
+    fibonacci[i] = fibonacci[i-1] + fibonacci[i-2]
+}
+console.log(fibonacci) 
+
+..............
+let array = []
+for(let i = 0 ; i< 135; i++) {
+    if(i % 3 === 0) {
+        array[i] = "Fizz"
+    }
+    else if (i % 5 === 0 ) {
+        array[i] = "Buzz"
+    }
+    else if (i % 15 === 0) {
+        array[i] = "FizzBuzz"
+    }
+    else {
+       array[i] = i
+    }
+}
+console.log(array) 
+
+
+...........
+function factorialize(n){
+var result =1;
+for (var i=0;i<=n;i++){
+  result*=i;
+ }
+ return result;
+} 
+console.log(factorialize(5));
+*/
+</script>
+
+
+
+</body>
+</html>
